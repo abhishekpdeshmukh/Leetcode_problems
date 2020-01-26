@@ -40,6 +40,17 @@ Note:
 S.length <= 10000
 S[i] is "(" or ")"
 S is a valid parentheses string
+
+
+SOLUTION:-
+
+		We maintain a output string,if the stack is initially empty we push the char in the stack but 
+		do not add it in the output string,whereas if the stack is not empty and we find a
+		a opening brace we push it and add it to the output string,when we meet its closing partner
+		we check that whether popping the stack makes it empty,if it does that means it
+		the current closing brace is the outermost and hence we dont add it to the output
+		string ,otherwise we pop and add .
+
 */
 #include <iostream>
 #include <stack>
